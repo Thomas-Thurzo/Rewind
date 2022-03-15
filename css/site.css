@@ -35,6 +35,10 @@ footer .social > a:hover {
     color: var(--secondary-color);
 }
 
+.logoFont {
+    font-family: 'Pacifico', cursive;
+}
+
 .bsIcon {
     color:purple;
 }
