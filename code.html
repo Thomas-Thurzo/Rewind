@@ -69,18 +69,44 @@
                 <div class="col-lg-8">
                     <pre class="line-numbers">
                         <code class="language-javascript">
-                            // Call Hello World
-                            function helloWorld(){
-                                alert("Hallo Welt");
+                            // Get Text (controller)
+                            function getValue(){
+                            
+                                let eingabeText = document.getElementById("eingabeString").value;
+                                let reverseText = reverseString(eingabeText);
+                            
+                                displayString(reverseText);   
+                            }
+                            
+                            // Reverse Text (logic)
+                            function reverseString(eingabeText){
+                                
+                                let reverseTextArray = []; 
+                            
+                                for (let index = eingabeText.length - 1; index >= 0; index--) {
+                                    reverseTextArray = reverseTextArray + eingabeText[index];       
+                                }
+                            
+                                return reverseTextArray;
+                            }
+                            
+                            // Display Text (view)
+                            function displayString(reverseText){
+                            
+                                document.getElementById("nachricht").innerHTML = "Das umgedrehte Wort lautet: " + reverseText;
+                            
+                                document.getElementById("alert").classList.remove("invisible");
                             }
                         </code>
                     </pre>
                 </div>
                 <div class="col-lg-4">
                     <h5>REWIND</h5>
-                    <p>Hello World is eine Funktion das zeigt eine Nachricht 
-                        von "Hello World".
-                    </p>
+                    <p>Das Programm besteht aus drei Funktionen.</p>
+                    <p>Die erste Funktion liest den Text ein und ruft 
+                        die anderen beiden Funktionen zur Berechnung und zur Anzeige auf.</p>
+                    <p>Die zweite Funktion ist die Logik Funktion und dreht das Wort um.</p>
+                    <p>Die dritte und letzte Funktion zeigt das umgedrehte Wort an.</p>
                 </div>
             </div>
     

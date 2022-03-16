@@ -1,2 +1,2 @@
-# MiniSiteTemplate
-Website Templates für JavaScript Projekte
+# Rewind
+Eine Coding Übung für JavaScript.
